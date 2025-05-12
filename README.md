@@ -1,73 +1,117 @@
-# Welcome to your Lovable project
+# Modern Developer Portfolio
 
-## Project info
 
-**URL**: https://lovable.dev/projects/142441ed-1e19-4fda-ab00-aa45414a055e
+A modern, responsive developer portfolio built with React, TypeScript, and Tailwind CSS. This portfolio showcases professional skills, projects, and services with interactive elements and modern UI design principles.
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **Responsive Design** - Optimized for all device sizes
+- **Interactive Elements** - Custom cursor, particle background, and animations
+- **TypeScript Support** - Fully typed codebase for better development experience
+- **Section-based Layout** - Organized content in distinct sections:
+  - Hero section with typewriter effect
+  - Skills showcase with categorization
+  - Services offered
+  - Projects portfolio
+  - Contact form with email integration
+- **Modern UI Components** - Using shadcn/ui for consistent design
+- **Animation Effects** - Smooth scroll reveal animations
+- **Custom Icons** - Tech stack icons for visual representation
 
-**Use Lovable**
+## 🚀 Technologies
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/142441ed-1e19-4fda-ab00-aa45414a055e) and start prompting.
+- **Frontend Framework**: React 18
+- **Build Tool**: Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui (Radix UI)
+- **Animations**: Framer Motion
+- **Routing**: React Router
+- **Form Handling**: React Hook Form with Zod validation
+- **Email Integration**: EmailJS
+- **State Management**: React Query
+- **Icons**: Lucide React
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16+)
+- npm or Bun package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
 
-Follow these steps:
+   ```sh
+   git clone <repository-url>
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Navigate to the project directory:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+   ```sh
+   cd updated_portofolio
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Install dependencies:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+   ```sh
+   npm install
+   # or
+   bun install
+   ```
+
+4. Start the development server:
+
+   ```sh
+   npm run dev
+   # or
+   bun run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:5173`
+
+## 📁 Project Structure
+
+```
+src/
+├── components/           # UI components
+│   ├── icons/            # Custom icon components
+│   ├── sections/         # Main page sections
+│   └── ui/               # shadcn/ui components
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+├── pages/                # Application pages
+└── App.tsx               # Main application component
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Configuration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Tailwind CSS**: Configure styling in `tailwind.config.ts`
+- **TypeScript**: Configure type checking in `tsconfig.json`
+- **Vite**: Configure build settings in `vite.config.ts`
 
-**Use GitHub Codespaces**
+## 🚢 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Build the production-ready assets:
 
-## What technologies are used for this project?
+```sh
+npm run build
+# or
+bun run build
+```
 
-This project is built with:
+The build artifacts will be stored in the `dist/` directory, ready to be deployed to your preferred hosting platform such as Vercel, Netlify, or GitHub Pages.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎯 Customization
 
-## How can I deploy this project?
+- **Personal Information**: Update your details in the respective section components
+- **Projects**: Modify `ProjectsSection.tsx` to showcase your own projects
+- **Skills**: Edit `SkillsSection.tsx` to reflect your technical expertise
+- **Color Scheme**: Modify theme colors in `tailwind.config.ts`
 
-Simply open [Lovable](https://lovable.dev/projects/142441ed-1e19-4fda-ab00-aa45414a055e) and click on Share -> Publish.
+## 📜 License
 
-## Can I connect a custom domain to my Lovable project?
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Yes, you can!
+## 📬 Contact
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For any inquiries or suggestions, please use the contact form on the portfolio or reach out through the provided social media links.
