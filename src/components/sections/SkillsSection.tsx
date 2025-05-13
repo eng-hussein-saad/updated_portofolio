@@ -19,7 +19,7 @@ import RestApiLogo from "../icons/RestApiLogo";
 import OdooLogo from "../icons/OdooLogo";
 import { BarChart, Terminal } from "lucide-react";
 
-const categories = ["All", "Frontend", "Backend", "Design", "Other"];
+const categories = ["All", "Frontend", "Backend", "Other"];
 
 const skills = [
   {
@@ -200,26 +200,44 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredSkills.map((skill, index) => (
-            <ScrollReveal key={skill.name} delay={200 + index * 100}>              <div className="hexagon bg-card hover:bg-teal-500/10 dark:hover:bg-cyber-yellow/10 transition-all duration-300 p-6 relative group overflow-hidden" style={{ height: '180px' }}>                <div className="flex flex-col items-center justify-between h-full relative z-10">                  <div className="w-16 h-16 mb-2 flex items-center justify-center">                    <div className="w-12 h-12 rounded-full bg-teal-500/20 dark:bg-cyber-yellow/20 flex items-center justify-center transition-all duration-300 group-hover:bg-teal-500/30 dark:group-hover:bg-cyber-yellow/30 group-hover:shadow-[0_0_15px_rgba(20,184,166,0.4)] dark:group-hover:shadow-[0_0_15px_rgba(255,215,0,0.4)] group-hover:scale-110">
+            <ScrollReveal key={skill.name} delay={200 + index * 100}>
+              {" "}
+              <div
+                className="hexagon bg-card hover:bg-teal-500/10 dark:hover:bg-cyber-yellow/10 transition-all duration-300 p-6 relative group overflow-hidden"
+                style={{ height: "180px" }}
+              >
+                {" "}
+                <div className="flex flex-col items-center justify-between h-full relative z-10">
+                  {" "}
+                  <div className="w-16 h-16 mb-2 flex items-center justify-center">
+                    {" "}
+                    <div className="w-12 h-12 rounded-full bg-teal-500/20 dark:bg-cyber-yellow/20 flex items-center justify-center transition-all duration-300 group-hover:bg-teal-500/30 dark:group-hover:bg-cyber-yellow/30 group-hover:shadow-[0_0_15px_rgba(20,184,166,0.4)] dark:group-hover:shadow-[0_0_15px_rgba(255,215,0,0.4)] group-hover:scale-110">
                       <div className="transform transition-transform duration-300 group-hover:scale-110">
                         {skill.icon}
                       </div>
                     </div>
-                  </div>                  <div className="flex flex-col items-center w-full">
-                    <h3 className="text-base font-medium mb-3 group-hover:text-teal-600 dark:group-hover:text-cyber-yellow transition-all duration-300 group-hover:scale-105 group-hover:font-semibold">{skill.name}</h3>
-                      <div className="w-full px-1 opacity-0 group-hover:opacity-100 transition-all duration-300">                      <div className="w-full h-2 bg-secondary/40 dark:bg-secondary/20 rounded-full overflow-hidden">
+                  </div>{" "}
+                  <div className="flex flex-col items-center w-full">
+                    <h3 className="text-base font-medium mb-3 group-hover:text-teal-600 dark:group-hover:text-cyber-yellow transition-all duration-300 group-hover:scale-105 group-hover:font-semibold">
+                      {skill.name}
+                    </h3>
+                    <div className="w-full px-1 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      {" "}
+                      <div className="w-full h-2 bg-secondary/40 dark:bg-secondary/20 rounded-full overflow-hidden">
                         <div
                           className="h-full bg-teal-500 dark:bg-cyber-yellow shadow-[0_0_5px_rgba(20,184,166,0.5)] dark:shadow-[0_0_5px_rgba(255,215,0,0.5)] transition-all duration-500 origin-left transform scale-x-0 group-hover:scale-x-100"
-                          style={{ 
-                            width: `${skill.level}%`
+                          style={{
+                            width: `${skill.level}%`,
                           }}
                         />
                       </div>
-                      <p className="text-xs mt-1 text-center font-medium text-teal-600 dark:text-cyber-yellow">{skill.level}%</p>
+                      <p className="text-xs mt-1 text-center font-medium text-teal-600 dark:text-cyber-yellow">
+                        {skill.level}%
+                      </p>
                     </div>
-                  </div>                </div>                <div 
-                  className="absolute inset-0 bg-gradient-to-br from-teal-500/0 to-teal-500/0 dark:from-cyber-yellow/0 dark:to-cyber-yellow/0 group-hover:from-teal-500/10 group-hover:to-teal-500/0 dark:group-hover:from-cyber-yellow/10 dark:group-hover:to-cyber-yellow/0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                ></div>
+                  </div>{" "}
+                </div>{" "}
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-500/0 to-teal-500/0 dark:from-cyber-yellow/0 dark:to-cyber-yellow/0 group-hover:from-teal-500/10 group-hover:to-teal-500/0 dark:group-hover:from-cyber-yellow/10 dark:group-hover:to-cyber-yellow/0 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-transparent via-teal-500/10 dark:via-cyber-yellow/10 to-transparent opacity-0 group-hover:opacity-100 blur-sm transition-all duration-1000 transform translate-x-[-100%] group-hover:translate-x-[100%]"></div>
               </div>
             </ScrollReveal>
