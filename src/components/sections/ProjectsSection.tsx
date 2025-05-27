@@ -207,10 +207,9 @@ const ProjectsSection = () => {
               <p className="text-foreground mb-6">
                 {selectedProject.fullDescription}
               </p>{" "}
-              <div className="flex gap-4 flex-wrap">
-                {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
+              <div className="flex gap-4 flex-wrap">                {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
                   <Button
-                    className="flex items-center gap-2 cyber-button"
+                    className="flex items-center gap-2 bg-teal-500 dark:bg-cyber-yellow text-white dark:text-black hover:bg-teal-600 dark:hover:bg-amber-500 border-0 transition-all duration-300"
                     asChild
                   >
                     <a
@@ -222,10 +221,9 @@ const ProjectsSection = () => {
                       Live Preview
                     </a>
                   </Button>
-                )}{" "}
-                {selectedProject.url && selectedProject.url !== "#" && (
+                )}{" "}                {selectedProject.url && selectedProject.url !== "#" && (
                   <Button
-                    className="flex items-center gap-2 cyber-button"
+                    className="flex items-center gap-2 bg-secondary dark:bg-gray-700 text-foreground hover:bg-secondary/80 dark:hover:bg-gray-600 border border-border transition-all duration-300"
                     asChild
                     variant="secondary"
                   >
@@ -238,13 +236,11 @@ const ProjectsSection = () => {
                       View Documentation
                     </a>
                   </Button>
-                )}
-                {selectedProject.demoUrl && selectedProject.demoUrl !== "#" && (
+                )}{selectedProject.demoUrl && selectedProject.demoUrl !== "#" && (
                   <Button
-                    className="flex items-center gap-2 cyber-button"
+                    className="flex items-center gap-2 border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300"
                     asChild
                     variant="outline"
-                    style={{ borderColor: "#FF0000", color: "#FF0000" }}
                   >
                     <a
                       href={selectedProject.demoUrl}
@@ -255,10 +251,9 @@ const ProjectsSection = () => {
                       Watch Demo
                     </a>
                   </Button>
-                )}
-                <Button
+                )}                <Button
                   variant="outline"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 border-border text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   asChild
                 >
                   <a
