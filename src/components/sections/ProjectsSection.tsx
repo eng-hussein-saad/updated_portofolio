@@ -84,8 +84,8 @@ const projects = [
       "Tailwind",
     ],
     liveUrl:
-      "http://trackit-frontend-vhgcgj-6044d6-129-159-8-224.traefik.me/login",
-    url: "https://drive.google.com/file/d/1LoSfyME8DwoMfF0cRJpu4XsMyhLrxTOV/view?usp=sharing",
+      "http://intrack-ai-frontend-istahm-4382f9-161-156-161-124.traefik.me/",
+    url: "https://drive.google.com/file/d/1vJ8EVY7uxN2OAlguy5ZtVcFJtmAUkgUT/view?usp=sharing",
     demoUrl:
       "https://drive.google.com/file/d/1MBL5L6Sh8CRCpulVdgsQO5l0irnzQK2O/view",
     githubUrl: "https://github.com/eng-hussein-saad/ITI-Attendance-Frontend",
