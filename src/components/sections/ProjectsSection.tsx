@@ -71,9 +71,9 @@ const projects = [
   },
   {
     id: 5,
-    title: "TrackIt",
+    title: "InTrack AI",
     description:
-      "This project is the frontend for the ITI Attendance Tracking system, a web application designed to manage student attendance, schedules, leave requests, and lost & found items within the institution.",
+      "A Full Stack web application that is designed to enhance operational efficiency at the Information Technology Institute (ITI) by automating student attendance tracking, managing permission requests, enabling AI-powered recovery of lost and found items, and offering robust event management features. ",
     image: "/proj_6.png",
     tags: [
       "React",
@@ -88,9 +88,10 @@ const projects = [
     url: "https://drive.google.com/file/d/1vJ8EVY7uxN2OAlguy5ZtVcFJtmAUkgUT/view?usp=sharing",
     demoUrl:
       "https://drive.google.com/file/d/1MBL5L6Sh8CRCpulVdgsQO5l0irnzQK2O/view",
-    githubUrl: "https://github.com/eng-hussein-saad/ITI-Attendance-Frontend",
+    githubUrl:
+      "https://docs.google.com/document/d/1UJlbXumoAMwDzVcrVXGrTyGXL2D1t5kc5D-TdHLUx6A/edit?tab=t.0",
     fullDescription:
-      "The system aims to automate and streamline student attendance tracking, manage permission requests, and facilitate the reporting and recovery of lost and found items within the Information Technology Institute (ITI).",
+      "The system aims to automate and streamline student attendance tracking, manage permission requests, AI-Powered Service that facilitate the reporting and recovery of lost and found items, and provide comprehensive event management capabilities within the Information Technology Institute (ITI).",
   },
 ];
 
@@ -207,7 +208,9 @@ const ProjectsSection = () => {
               <p className="text-foreground mb-6">
                 {selectedProject.fullDescription}
               </p>{" "}
-              <div className="flex gap-4 flex-wrap">                {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
+              <div className="flex gap-4 flex-wrap">
+                {" "}
+                {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
                   <Button
                     className="flex items-center gap-2 bg-teal-500 dark:bg-cyber-yellow text-white dark:text-black hover:bg-teal-600 dark:hover:bg-amber-500 border-0 transition-all duration-300"
                     asChild
@@ -221,7 +224,8 @@ const ProjectsSection = () => {
                       Live Preview
                     </a>
                   </Button>
-                )}{" "}                {selectedProject.url && selectedProject.url !== "#" && (
+                )}{" "}
+                {selectedProject.url && selectedProject.url !== "#" && (
                   <Button
                     className="flex items-center gap-2 bg-secondary dark:bg-gray-700 text-foreground hover:bg-secondary/80 dark:hover:bg-gray-600 border border-border transition-all duration-300"
                     asChild
@@ -236,7 +240,8 @@ const ProjectsSection = () => {
                       View Documentation
                     </a>
                   </Button>
-                )}{selectedProject.demoUrl && selectedProject.demoUrl !== "#" && (
+                )}
+                {selectedProject.demoUrl && selectedProject.demoUrl !== "#" && (
                   <Button
                     className="flex items-center gap-2 border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300"
                     asChild
@@ -251,7 +256,8 @@ const ProjectsSection = () => {
                       Watch Demo
                     </a>
                   </Button>
-                )}                <Button
+                )}{" "}
+                <Button
                   variant="outline"
                   className="flex items-center gap-2 border-border text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   asChild
