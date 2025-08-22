@@ -84,7 +84,7 @@ const projects = [
       "Tailwind",
     ],
     liveUrl:
-      "http://intrack-ai-frontend-istahm-4382f9-161-156-161-124.traefik.me/",
+      "http://intrack-ai-frontend-hmiucs-1c8685-130-61-217-161.traefik.me/",
     url: "https://drive.google.com/file/d/1vJ8EVY7uxN2OAlguy5ZtVcFJtmAUkgUT/view?usp=sharing",
     demoUrl:
       "https://drive.google.com/file/d/1MBL5L6Sh8CRCpulVdgsQO5l0irnzQK2O/view",
